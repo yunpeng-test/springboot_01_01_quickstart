@@ -13,8 +13,7 @@ public class BookController {
     @GetMapping
     public String getById() {
         Random random = new Random();
-        System.out.println("springboot log is running..." + random.ints());
-        return "springboot web is running...";
+        System.out.println(String.valueOf(random));
+        return String.valueOf(random);
     }
 }
-
