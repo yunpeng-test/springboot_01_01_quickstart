@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('git pull') {
       steps {
-        sh 'git clone springboot_01_01_quickstart'
+        sh 'git clone https://github.com/yunpeng-test/springboot_01_01_quickstart.git'
       }
     }
 
