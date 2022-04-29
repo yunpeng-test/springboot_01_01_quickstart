@@ -21,7 +21,9 @@ pipeline {
 
     stage('stop') {
       steps {
-        sh 'echo \'happy\''
+        sh '''echo \'happy\'
+
+asdasd'''
       }
     }
 
