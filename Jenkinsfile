@@ -21,11 +21,7 @@ pipeline {
 
     stage('stop') {
       steps {
-        sh '''#!/bin/bash
-BUILD_ID=dontKillMe
-cd /var/lib/jenkins/workspace/springboot_01_01_quickstart/target
-pid=`ps -ef |grep springboot_01_01_quickstart-0.0.1-SNAPSHOT.jar  |grep -v grep |awk {\'print $2\'}`
-'''
+        sh 'bash ./shutdown.sh'
       }
     }
 
