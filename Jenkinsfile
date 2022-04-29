@@ -22,7 +22,8 @@ nohup java -jar springboot_01_01_quickstart-0.0.1-SNAPSHOT.jar --server.port=80 
 
     stage('stop') {
       steps {
-        sh 'bash ./shutdown.sh'
+        sh '''cd /var/lib/jenkins/workspace/springboot_01_01_quickstart/target
+./shutdown.sh'''
       }
     }
 
