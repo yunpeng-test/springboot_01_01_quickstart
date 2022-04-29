@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('pull_code') {
       steps {
-        git(url: 'https://github.com/yunpeng-test/springboot_01_01_quickstart/', branch: 'main')
+        git(url: 'https://ghproxy.com/github.com/yunpeng-test/springboot_01_01_quickstart', branch: 'main')
       }
     }
 
