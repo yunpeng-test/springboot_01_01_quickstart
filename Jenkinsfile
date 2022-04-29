@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('deploy') {
+      steps {
+        sh '''#!/bin/bash
+java -jar springboot_01_01_quickstart-0.0.1-SNAPSHOT.jar --server.port=80 > springboot.log &'''
+      }
+    }
+
   }
 }
