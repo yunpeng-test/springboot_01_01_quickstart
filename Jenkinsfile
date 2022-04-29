@@ -15,7 +15,8 @@ pipeline {
 
     stage('run') {
       steps {
-        sh 'nohup java -jar springboot_01_01_quickstart-0.0.1-SNAPSHOT.jar --server.port=80 > springboot.log &'
+        sh '''cd /var/lib/jenkins/workspace/ot_01_01_quickstart_pipline_main/target
+nohup java -jar springboot_01_01_quickstart-0.0.1-SNAPSHOT.jar --server.port=80 > springboot.log &'''
       }
     }
 
