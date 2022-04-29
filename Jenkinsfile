@@ -21,9 +21,8 @@ pipeline {
 
     stage('stop') {
       steps {
-        sh '''echo \'happy\'
-
-asdasd'''
+        sh '''#!/bin/bash
+BUILD_ID=dontKillMe'''
       }
     }
 
