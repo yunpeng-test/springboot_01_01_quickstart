@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('stop') {
+      steps {
+        sh 'echo \'happy\''
+      }
+    }
+
   }
 }
