@@ -10,6 +10,11 @@ import java.util.Random;
 @RequestMapping("/books")
 public class BookController {
 
+    int i = 100/0;
+    int i = 100/0;
+    int i = 100/0;
+    int i = 100/0;
+    int i = 100/0;
     @GetMapping
     public String getById() {
         Random random = new Random();
