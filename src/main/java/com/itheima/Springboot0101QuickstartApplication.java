@@ -8,7 +8,9 @@ public class Springboot0101QuickstartApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Springboot0101QuickstartApplication.class, args);
-		int i=100/0;
+		int i= 100/0;
+		int a = 100;
+		a = 200;
 	}
 
 }
